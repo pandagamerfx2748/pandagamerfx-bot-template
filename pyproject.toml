@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pandagamerfx-bpt"
+name = "adminbot"
 version = "0.1.0"
 description = " this is admin bot"
 authors = ["@pandagamerfx#2748"]
