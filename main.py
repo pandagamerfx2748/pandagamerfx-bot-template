@@ -66,7 +66,7 @@ async def repost(ctx):
 bot.remove_command("help")
 @bot.command()
 async def help(ctx, args=None):
-    help_embed = discord.Embed(title=" {bot.user.name} Help command!")
+    help_embed = discord.Embed(title="Help command!")
     command_names_list = [x.name for x in bot.commands]
 
     # If there are no arguments, just list the commands:
