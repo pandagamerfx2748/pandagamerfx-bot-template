@@ -205,6 +205,39 @@ async def shutdown(ctx):
         print("Shutting down...")
         await bot.close()
 
+	
+	
+	
+	# and a total of {len(bot.users)} are using me!
+@bot.command()
+async def invite(ctx):
+	embed = discord.Embed(
+	    title=f"{bot.user.name}'s invite",
+	    description=
+	    "Click [here](https://discord.com/oauth2/authorize?client_id=795583415960600596&permissions=8&scope=bot%20applications.commands) to invite"
+	)
+	await ctx.send(embed=embed)
+
+# and a total of {len(bot.users)} are using me!
+@bot.command()
+async def credit(ctx):
+	embed = discord.Embed(
+	    title=f"{bot.user.name}'s support the server",
+	    description=
+	    "Click [here](https://discord.gg/UgSvKwQT3g) to join jonse AJ discord server and Click [here](https://discord.gg/YxvZzXbS5Z) to support pandagamerfx discord server")
+	await ctx.send(embed=embed)
+
+# and a total of {len(bot.users)} are using me!
+@bot.command()
+async def template(ctx):
+	embed = discord.Embed(
+	    title=f"{bot.user.name}'s template",
+	    description=
+	    "Click [here](https://github.com/pandagamerfx2748/pandagamerfx-bot-template) to copy to template"
+	)
+	await ctx.send(embed=embed)
+	
+	
 #bot.load_extension('cogs.v')
 keep_alive()  #make you bot online for 1 hour when u close the tab
 bot.run(token)  #start your bot
