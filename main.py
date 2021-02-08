@@ -52,6 +52,13 @@ async def create(ctx):
 	    "Click [here](https://discord.com/oauth2/authorize?client_id=795583415960600596&permissions=8&scope=bot%20applications.commands) to invite")
   await ctx.send(embed=embed)
 
+  @bot.command()
+  async def repost(ctx):
+     embed = discord.Embed(
+	    title=f"{bot.user.name}'s repost template",
+	    description=
+	    "Click [here](https://github.com/pandagamerfx2748/pandagamerfx-bot-template) to repost template")
+  await ctx.send(embed=embed)
 
 bot.remove_command("help")
 @bot.command()
