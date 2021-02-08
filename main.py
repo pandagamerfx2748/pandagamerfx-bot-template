@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix="p!",
     )  #change prefix if you want
 from keep_alive import keep_alive  #import the code from your file
 token = "your-bot-token"  #from your discord developer platform
-OWNER =#yourdiscord token
+OWNER =#your discord id
 
 @bot.event #make ur bot online
 async def on_ready():
