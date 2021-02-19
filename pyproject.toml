@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "adminbot"
+name = "pandagamerfx template"
 version = "0.1.0"
-description = " this is admin bot"
+description = " this is pandagamerfx bot template"
 authors = ["@pandagamerfx#2748"]
 
 [tool.poetry.dependencies]
