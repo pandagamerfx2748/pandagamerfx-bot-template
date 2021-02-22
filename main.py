@@ -6,8 +6,8 @@ bot = commands.Bot(command_prefix="p!",
                    guild_subscriptions=True,
                    intents=intents, help_command=None)  #change prefix if you want
 from keep_alive import keep_alive  #import the code from your file
-token = "Nzk1NTgzNDE1OTYwNjAwNTk2.X_Leyw.R7Phk4dJV4YN3ZLuzpnMWeClqZ8"  #from your discord developer platform
-OWNER = 739444667782791178
+token = "your-bot-token"  #from your discord developer platform
+OWNER = your-id
 async def get_help_embed():
     em = discord.Embed(title="help command", description="", color=discord.Color.green())
     em.description += f"**1. {bot.command_prefix}help #list every command and music command\n"
@@ -27,26 +27,7 @@ async def get_help_embed():
     em.description += f"14. {bot.command_prefix}mute #get user mute i think it does not work maybe it work\n"
     em.description += f"15. {bot.command_prefix}unmute #get user unmute\n"
     em.description += f"16. {bot.command_prefix}clear #clear how many you want\n"
-    em.description += f"----bot info----\n"
-    em.description += f"17. {bot.command_prefix}debug #Which the bot connected in 0 are 1 channels\n"
-    em.description += f"18. {bot.command_prefix}ping #pong get the ping of the bot\n"
-    em.description += f"----music command----\n"
-    em.description += f"19. {bot.command_prefix}play #play on youtube spotify and other\n"
-    em.description += f"20. {bot.command_prefix}pause #pause the music\n"
-    em.description += f"21. {bot.command_prefix}resume #resume the music\n"
-    em.description += f"22. {bot.command_prefix}loop #music will be loop\n"
-    em.description += f"23. {bot.command_prefix}nowplaying #it say what song now play btw you can use the command like this p!np it works to\n"
-    em.description += f"24. {bot.command_prefix}stop #stop the music\n"
-    em.description += f"26. {bot.command_prefix}Skip #Skip the music\n"
-    em.description += f"27. {bot.command_prefix}search #search the music on yt\n"
-    em.description += f"28. {bot.command_prefix}queue #get server queue  \n"
-    em.description += f"29. {bot.command_prefix}volume #to set the volume \n"
-    em.description += f"30. {bot.command_prefix}clear-queue #get clear queue on the server\n"
-    em.description += f"31. {bot.command_prefix}filter #change song filters but how long the song is how longger it takes\n"
-    em.description += f"32. {bot.command_prefix}w-filters #get list list of filters what enabled are disabled is\n"
-    em.description += f"----all filters----\n"
-    em.description += f"To use filters,p!filters (the filter). Example :p!filters 8d\n"
-    em.description += f"8d, gate, haas, phaser, treble, tremolo, vibrato, reverse, karaoke, flanger, mcompand, pulsator, subboost, bassboost, vaporwave, nightcore, normalizer, surrounding\n"
+  
     em.set_footer(text="Thanks for using me!", icon_url=bot.user.avatar_url)
     return em
 
